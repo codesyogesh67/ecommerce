@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.app::-webkit-scrollbar {
+  display: none;
+}
+.home,
+.products,
+.payment,
+.checkout,
+.unauthenticatedPage,
+.paymentSuccess {
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.home::-webkit-scrollbar {
+  display: none;
+}

@@ -1,0 +1,85 @@
+.login {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 2rem 2rem;
+  height: 70vh;
+}
+
+.login__container {
+  border: 1px solid rgb(174, 174, 174);
+  border-radius: 0.4rem;
+  box-shadow: -5px 10px #e6e6e6;
+  border-style: box;
+  width: 50vw;
+  max-width: 500px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+.form {
+  margin-top: 8rem;
+}
+.login__title {
+  text-align: center;
+}
+
+.login__form {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.login__form label {
+  padding: 0.2rem;
+  color: rgb(80, 80, 80);
+  font-size: 0.8rem;
+}
+
+.login__form input:focus {
+  outline: none;
+}
+
+.login__form input {
+  border: none;
+  padding: 0.4rem;
+  margin: 0.2rem 0;
+  border-radius: 0.2rem;
+  background-color: rgb(238, 238, 238);
+}
+
+.login__form > button {
+  color: rgb(249, 249, 249);
+  background: rgb(36, 36, 36);
+  padding: 0.5rem;
+  margin-top: 0.6em;
+  border-radius: 0.4rem;
+  font-size: 0.8rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.login__form > button:disabled {
+  opacity: 0.6;
+}
+
+.login__footerText {
+  margin-left: 1.2rem;
+}
+.errors-feedback {
+  font-size: 0.8rem;
+  color: red;
+  padding: 0.2rem;
+}
+.errors {
+  border: 1px solid red;
+}
+
+@media screen and (max-width: 600px) {
+  .login__container {
+    width: 100%;
+  }
+}

@@ -1,0 +1,37 @@
+.unauthenticatedPage__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 60vh;
+}
+
+.unauthenticatedPage__main {
+  flex: 1;
+  margin: 20px;
+  font-size: 1.2rem;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.unauthenticatedPage__link {
+  color: blue;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-left: 10px;
+  margin-right: 10px;
+  border: rgb(80, 36, 36);
+  padding: 3px;
+  border-radius: 6px;
+  box-shadow: 4px 4px rgba(139, 136, 136, 0.5);
+}
+
+@media only screen and (max-width: 600px) {
+  .unauthenticatedPage__container {
+    height: 40vh;
+  }
+}

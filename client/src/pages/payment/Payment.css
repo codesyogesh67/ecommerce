@@ -1,0 +1,109 @@
+.payment__wrapper {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.payment__back {
+  color: rgb(12, 12, 12);
+  border: 1px solid rgb(199, 198, 198, 0.5);
+  box-shadow: 2px 2px rgb(203, 202, 202);
+  border-radius: 20px;
+  padding: 10px;
+  font-size: 0.7rem;
+  margin-left: 3vw;
+  margin-bottom: 10px;
+  width: 120px;
+  cursor: pointer;
+}
+.payment__container {
+  display: flex;
+  flex-grow: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 40vh;
+}
+
+.payment__box {
+  padding: 20px;
+}
+
+.payment__box > p {
+  padding: 10px;
+  font-weight: 700;
+}
+
+.payment__box > p > span {
+  color: rgb(48, 80, 220);
+  margin-left: 5px;
+}
+
+.payment__box > form {
+  padding: 15px;
+  background: rgb(230, 228, 228);
+  margin-top: 20px;
+  border-radius: 10px;
+  width: 60vw;
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  box-shadow: 2px 2px rgba(232, 232, 232, 0.8);
+}
+
+.payment__button {
+  width: 100px;
+  text-align: center;
+  padding: 12px;
+  border: none;
+  font-size: 0.8rem;
+  border-radius: 10px;
+  cursor: pointer;
+  background: rgb(255, 216, 20);
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.payment__cardElement {
+  border: 1px solid rgb(244, 244, 245);
+  padding: 10px;
+  border-radius: 10px;
+  background: rgb(252, 252, 252);
+}
+
+@media only screen and (max-width: 600px) {
+  .payment__box > form {
+    width: 100vw;
+  }
+}
+
+/* Payment Success */
+
+.paymentSuccess__container {
+  height: 58vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: 500;
+  color: rgb(19, 19, 19);
+  display: flex;
+  flex-direction: column;
+}
+.paymentSuccess__back {
+  margin-top: 5rem;
+  font-size: 1.3rem;
+  border: 1px solid rgb(121, 119, 119);
+  padding: 0.7rem;
+  border-radius: 15px;
+  color: rgb(101, 99, 99);
+}
+@media only screen and (max-width: 600px) {
+  .paymentSuccess__container {
+    font-size: 1.2rem;
+  }
+  .paymentSuccess__back {
+    font-size: 0.8rem;
+  }
+}
