@@ -12,10 +12,6 @@ const app = express();
 app.use(bodyParser.json());
 app.use(cors({ origin: true }));
 
-app.get("/", (req, res) => {
-  res.send("hello. It's me.");
-});
-
 app.post("/payments/create", async (req, res) => {
   const total = req.query.total;
 
